@@ -1,0 +1,44 @@
+html {
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  display: flex;
+  gap: 3rem;
+  animation: marquee 40s linear infinite;
+  min-width: 200%;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (max-width: 768px) {
+  .marquee-track {
+    gap: 2rem;
+  }
+  
+  .card-min-width {
+    min-width: 90% !important;
+  }
+}
