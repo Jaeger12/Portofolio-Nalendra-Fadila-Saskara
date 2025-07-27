@@ -49,7 +49,7 @@ function scrollCarousel(direction) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const text1 = "Hi, I'm Nalendra Fadila Saskara";
-  const text2 = "Undergraduate Student";
+  const text2 = "Information System Student";
   const typedText = document.getElementById("typed-text");
   const subTypedText = document.getElementById("sub-typed-text");
   let index1 = 0;
